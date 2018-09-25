@@ -1,0 +1,17 @@
+#!/bin/bash
+
+source $(dirname ${BASH_SOURCE[0]})/testrpc_settings
+
+./node_modules/.bin/ganache-cli \
+    --account=$ACCOUNT_00_KEY,$ACCOUNT_00_AMOUNT \
+    --account=$ACCOUNT_01_KEY,$ACCOUNT_01_AMOUNT \
+    --account=$ACCOUNT_02_KEY,$ACCOUNT_02_AMOUNT \
+    --account=$ACCOUNT_03_KEY,$ACCOUNT_03_AMOUNT \
+    --account=$ACCOUNT_04_KEY,$ACCOUNT_04_AMOUNT \
+    --account=$ACCOUNT_05_KEY,$ACCOUNT_05_AMOUNT \
+    --account=$ACCOUNT_06_KEY,$ACCOUNT_06_AMOUNT \
+    --account=$ACCOUNT_07_KEY,$ACCOUNT_07_AMOUNT \
+    --account=$ACCOUNT_08_KEY,$ACCOUNT_08_AMOUNT \
+    --account=$ACCOUNT_09_KEY,$ACCOUNT_09_AMOUNT \
+    --blockTime=$BLOCK_TIME \
+    --gasLimit=$GAS_LIMIT
